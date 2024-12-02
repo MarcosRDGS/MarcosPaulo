@@ -1,0 +1,180 @@
+
+
+/* Aqui eu defini o estilo da pagina */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Aqui eu defini o estilo do cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 20px;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(83, 122, 240);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px  rgb(83, 122, 240) ;
+}
+
+
+
+img{
+    width: 60%;
+    height: 35%;
+}
+
+/* Aqui eu defini o estilo do meu sobre */
+section.topo-portfolio{
+    padding: 40px 4%;
+  
+}
+section.topo-portfolio .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.topo-portfolio h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-portfolio .txt-topo-portfolio p{
+    color: white;
+    margin: 40px 0;
+}
+
+
+
+@keyframes flutuante{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
+
+
+}
+
+.topo-portfolio .img-topo-portfolio img{
+    position: relative;
+    animation: flutuante 2s ease-in-out infinite alternate;
+   
+
+
+}
+#foto-perfil{
+    width: 200%;
+    height: 195%;
+    border-radius: 20px;
+
+}
+/* aqui eu defini o estilo do meu rodapé */
+
+footer{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+.borda{
+    border-top:2px solid rgb(83, 122, 240);
+}
+
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(83, 122, 240) ;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    transform: scale(1.05);
+}
+.btn-social  button:hover{
+    box-shadow: 0px 0px 8px  rgb(83, 122, 240) ;
+}
+footer .line-footer p i{
+    color: rgb(83, 122, 240);
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+
+
+
+#minhalogo{
+    width: 65%;
+    height: 80%;
+}
